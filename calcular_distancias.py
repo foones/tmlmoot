@@ -26,7 +26,7 @@ def distancia(fn1, fn2):
 
 if __name__ == '__main__':
     fuentes = os.listdir('fuentes')
-    fuentes.remove('fuentes/README.txt')
+    fuentes.remove('README.txt')
     with open('distancias.txt', 'w') as f:
         for fn1 in fuentes:
             for fn2 in fuentes:

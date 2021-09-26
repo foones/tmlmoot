@@ -9,6 +9,7 @@ r = csv.reader(open('distancias.txt'))
 for x in r:
     d[(x[0], x[1])] = float(x[2])
 claves = list(os.listdir('fuentes/'))
+claves.remove('README.txt')
 
 def weight(clave1):
     w = 0
